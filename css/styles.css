@@ -133,7 +133,9 @@ body {
 .hero {
     padding: 192px 0;
     text-align: center;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-color: var(--head-color);
+    background-size: cover;
 }
 
 .hero-title {
@@ -170,7 +172,7 @@ body {
     top: 432px;
     color: var(--light-background-color);
     gap: 10px;
-}
+  }
 
 .visually-hidden {
     position: absolute;
@@ -266,6 +268,23 @@ body {
     padding-left: 16px;
     text-align: center;
 }
+.social-list{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 12px;
+
+}
+.social-list-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--brand-color)
+}
+
 .portfolio {
     padding-top: 96px;
 }
@@ -323,10 +342,54 @@ body {
 .section-footer {
     padding-top: 100px;
     padding-bottom: 100px;
+    display: flex;
 }
 
 .footer {
     background-color: var(--head-color);
+}
+
+.customers-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--head-color);
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 72px;
+}
+
+.customers-link {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    width: 168px;
+    height: 88px;
+    padding-top: 16px;
+}
+
+.customers-link:hover,
+.customers-link:focus{
+    border-color:#4D5AE5;
+}
+
+.customers-link:hover .customers-link-icon,
+.customers-link:focus .customers-link-icon{
+    fill: #4D5AE5;
+ }
+
+.customers-link-icon{
+    width: 104px;
+    height: 56px;
+}
+
+.customers-list{
+    gap:24px;
+    margin-bottom: 120px;
 }
 
 .logo-footer {
@@ -346,7 +409,43 @@ body {
     letter-spacing: 0.02em;
     color: var(--accent-color);
 }
+.social-media {
+    display: inline-flex;
+    font-weight: 600;
+    line-height: 1.5px;
+    letter-spacing: 0.02em;
+    color: var(--background-color-white);
+}
+.social-list-footer {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 12px;
+}
 
+.social-media-footer{
+    display:inline-block;
+    margin-right: 120px;
+
+}
+.social-list-item-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.social-list-item-footer:hover,
+.social-list-item-footer:focus{
+    background-color: #31D0AA ;
+}
+
+.social-list-link-footer:hover .social-list-icon-footer,
+.social-list-link-footer:focus .social-list-icon-footer {
+    fill: #F4F4FD;
+}
 .project-table {
     display: flex;
     flex-wrap: wrap;
