@@ -370,6 +370,7 @@ body {
     width: 168px;
     height: 88px;
     padding-top: 16px;
+    
 }
 
 .customers-link:hover,
@@ -385,11 +386,13 @@ body {
 .customers-link-icon{
     width: 104px;
     height: 56px;
+    color: #8E8F99;
 }
 
 .customers-list{
     gap:24px;
     margin-bottom: 120px;
+    
 }
 
 .logo-footer {
