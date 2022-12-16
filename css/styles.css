@@ -447,7 +447,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
-    padding-top: 12px;
+    padding-top: 16px;
 }
 
 .social-media-footer{
@@ -458,7 +458,9 @@ body {
     display: inline-block;
     margin-right: 120px;
 }
-
+.footer-describe {
+    display: flex;
+}
 .social-list-item-footer {
     display: flex;
     justify-content: center;
@@ -469,12 +471,17 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
     }
 .social-list-icon-footer {
-        fill: var(--light-background-color)
+    fill: var(--light-background-color)
 }
 
 .social-list-item-footer:hover,
 .social-list-item-footer:focus{
     background-color: #31D0AA ;
+}
+
+.social-list-link-footer:hover .social-list-icon-footer,
+.social-list-link-footer:focus .social-list-icon-footer {
+    fill: var(--light-background-color);
 }
 
 .social-list-link-footer:hover .social-list-icon-footer,
