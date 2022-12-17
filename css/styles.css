@@ -194,8 +194,8 @@ body {
 }
 
 .benefits-list-image{
-    gap:24px;
-    display: flex;
+   gap: 24px;
+   display: flex;
 }
 
 .benefits-list-icon{
@@ -204,17 +204,21 @@ body {
     height: 64px;
 }
 
-.benefits-list-item {
+.benefits-list-image{
     display: flex;
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
     border-radius: 4px;
-    width: 264px;
+    width: 100%;
     height: 112px;
-    background-color:var(--light-background-color);
+    background-color: var(--light-background-color);
     fill: var(--light-background-color);
     margin-bottom: 8px;
+}
+
+.benefits-list-item {
+    width: 264px;
 }
 
 .benefits-title {
@@ -284,14 +288,17 @@ body {
     letter-spacing: 0.02em;
     color: var(--main-text-color);
 }
+
 .team-section {
     background: var(--light-background-color);
 }
+
 .team-wrapper {
     padding-top: 32px;
     padding-bottom: 32px;
     text-align: center;
 }
+
 .social-list{
     display: flex;
     gap: 24px;
@@ -299,6 +306,7 @@ body {
     justify-content: center;
 
 }
+
 .social-list-link{
     display: flex;
     justify-content: center;
@@ -308,6 +316,7 @@ body {
     border-radius: 50%;
     background-color: var(--brand-color)
 }
+
 .social-list-icon{
     fill: var(--light-background-color);
 }
@@ -315,6 +324,7 @@ body {
 .portfolio {
     padding-top: 96px;
 }
+
 .project-title {
     font-weight: 600;
     font-size: 20px;
@@ -336,8 +346,6 @@ body {
 }
 .project-card-link:hover {
     display: block;
-    background:var(--background-color-white);
-    border: 0.5px solid var(--light-background-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
@@ -353,8 +361,7 @@ body {
     letter-spacing: 0.04em;
     color: #4D5AE5;
     background: #F4F4FD;
-        border-radius: 4px;
-
+    border-radius: 4px;
  
 }
 
@@ -366,8 +373,6 @@ body {
 
 }
 
-
-
 .customers-header {
     font-weight: 700;
     font-size: 36px;
@@ -377,7 +382,6 @@ body {
     color: var(--head-color);
     text-align: center;
     padding-bottom: 72px;
-
 }
 
 .customers-link {
@@ -439,7 +443,7 @@ body {
 .social-media {
     display: inline-flex;
     font-weight: 600;
-    line-height: 1.5px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--background-color-white);
 }
@@ -447,7 +451,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
-    padding-top: 16px;
+    margin-top: 16px;
 }
 
 .social-media-footer{
@@ -462,32 +466,30 @@ body {
     display: flex;
 }
 .social-list-item-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
     }
+    
+
 .social-list-icon-footer {
     fill: var(--light-background-color)
 }
 
-.social-list-item-footer:hover,
-.social-list-item-footer:focus{
+.social-list-link-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+    
+.social-list-link-footer:hover,
+.social-list-link-footer:focus{
     background-color: #31D0AA ;
 }
 
-.social-list-link-footer:hover .social-list-icon-footer,
-.social-list-link-footer:focus .social-list-icon-footer {
-    fill: var(--light-background-color);
-}
-
-.social-list-link-footer:hover .social-list-icon-footer,
-.social-list-link-footer:focus .social-list-icon-footer {
-    fill: var(--light-background-color);
-}
 .project-table {
     display: flex;
     flex-wrap: wrap;
